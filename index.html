@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mô hình 3D</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    html,body{margin:0;height:100%;overflow:hidden}
+    model-viewer{
+      position:fixed;
+      inset:0;
+      width:100vw;
+      height:100vh;
+      margin:0;
+      padding:0;
+      background:#000;
+      --poster-color:#000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Thay model.glb bằng đường dẫn file của bạn -->
+  <model-viewer
+    src="https://huggingface.co/SangLazyGuy/dogom3D/resolve/main/batthoily.glb"
+    camera-controls
+    auto-rotate
+    environment-image="neutral"
+    alt="3D Fullscreen">
+  </model-viewer>
+</body>
+</html>
